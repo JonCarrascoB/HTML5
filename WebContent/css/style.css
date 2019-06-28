@@ -1,0 +1,36 @@
+/*
+Nuestra hoja de estilos principal
+*/
+
+.text-danger {
+	color: red;
+}
+
+#principal{
+	background-color:teal;
+	color: #FFF;
+	margin: 0 0 25px 0;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #000;
+}
+#principal a{
+	color: #FFF;
+	text-decoration: none;
+}
+#principal a:hover{
+	color: teal;
+	
+	padding: 5px;
+	transition-duration: 2s;
+	background-color: red;
+	
+}
+h1 {
+	color: #0fcccc;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+label {
+	color: #008080;
+}
