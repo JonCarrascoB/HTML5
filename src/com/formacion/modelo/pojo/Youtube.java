@@ -1,4 +1,4 @@
-package com.formacion.modelo;
+package com.formacion.modelo.pojo;
 
 public class Youtube {
 

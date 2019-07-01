@@ -1,4 +1,4 @@
-package com.formacion.modelo;
+package com.formacion.modelo.pojo;
 
 public class Video {
 
@@ -6,7 +6,7 @@ public class Video {
 		public static final int LONGITUD_CODIGO = 11;
 		public static final int LONGITUD_MIN_TITULO = 2;
 		public static final int LONGITUD_MAX_TITULO = 150;
-		public static final String URL = "https://www.youtube.com/embed/";
+		public static final String URL = "Https://www.youtube.com/watch?v=";
 
 		// atributos
 		private String titulo;  // minimo 2 letras, max 150
