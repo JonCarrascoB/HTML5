@@ -10,21 +10,7 @@
 		<li><img id="imgNav" src="resources/iconocss.jpg" alt="CSS"><a href=""> Ejemplos CSS</a></li>
 		</ul>
 	</nav>
-=======
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="ISO-8859-1">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/style.css?a"> <!-- ?x te obliga a refrescar o recargar los css -->
-	<base href="/Video/">
-</head>
-<body>
-
-	<nav id="principal">
-		<a href="perro/formulario.jsp">Crear perro</a>
-	</nav>
 	
 	<h1>Nuevo Video</h1>
 	
@@ -42,7 +28,7 @@
 		<br/>
 		<input type="submit" value="CREAR" />
 	</form>
->>>>>>> branch 'master' of https://github.com/JonCarrascoB/HTML5.git
+
 
 
 
