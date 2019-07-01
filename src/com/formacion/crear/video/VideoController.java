@@ -16,7 +16,6 @@ import com.formacion.modelo.Video;
 public class VideoController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-   
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
@@ -24,6 +23,7 @@ public class VideoController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String vista = "respuesta.jsp";
+		Video video = new Video();
 		
 		String titulo = request.getParameter("titulo");
 		String codigo = request.getParameter("codigo");
@@ -35,7 +35,10 @@ public class VideoController extends HttpServlet {
 			
 		}else {
 			try {
-				Video video = new Video(titulo, codigo);
+				video.setTitulo(titulo);
+				video.setCodigo(codigo);
+				HttpSession session =request.getSession();
+	            session.setAttribute("video", video);
 				
 			} catch (Exception e) {
 				request.setAttribute("mensaje", e.getMessage());
