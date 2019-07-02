@@ -10,7 +10,18 @@
 <body>
 
 	<nav id="principal">
-		<a href="perro/formulario.jsp">Crear perro</a>
+		<ul>
+			<li>
+				<img src="resources/iconoperro.jpg" id="dog_icon" alt="Perro"><a href="perro/formulario.jsp">Crear perro</a>
+			</li>
+			<li>
+				<img src="resources/iconovideo.jpg" id="video_icon" alt="Video"><a href="perro/formulario.jsp">Crear video</a>
+			</li>
+			<li>
+				<img src="resources/iconoalumno.jpg" id="class_icon" alt="Alumno"><a href="perro/formulario.jsp">Crear alumno</a>
+			</li>
+		</ul>
+		
 	</nav>
 	
 	<h1>Nuevo Video</h1>
