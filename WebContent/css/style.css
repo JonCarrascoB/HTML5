@@ -1,3 +1,40 @@
+<<<<<<< HEAD
+
+#imgPrincipal{
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+form{
+	background-color: #97C;;
+	
+}
+#mainNav{
+	background-color: teal;
+}
+
+#imgNav {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #000;
+}
+
+
+
+/*layouts*/
+
+header{
+	background-color:#DDD;
+}
+
+footer{
+	background-color:pink;
+=======
 /*
 Nuestra hoja de estilos principal
 */
@@ -39,4 +76,5 @@ ul{
 
 label {
 	color: #008080;
+>>>>>>> branch 'master' of https://github.com/JonCarrascoB/HTML5.git
 }

@@ -1,28 +1,17 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="ISO-8859-1">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href="css/style.css?a"> <!-- ?x te obliga a refrescar o recargar los css -->
-	<base href="/Video/">
-</head>
-<body>
-
-	<nav id="principal">
+<%@include file="../incluides/header.jsp" %>
+	
+	<nav id=mainNav>
 		<ul>
-			<li>
-				<img src="resources/iconoperro.jpg" id="dog_icon" alt="Perro"><a href="perro/formulario.jsp">Crear perro</a>
-			</li>
-			<li>
-				<img src="resources/iconovideo.jpg" id="video_icon" alt="Video"><a href="perro/formulario.jsp">Crear video</a>
-			</li>
-			<li>
-				<img src="resources/iconoalumno.jpg" id="class_icon" alt="Alumno"><a href="perro/formulario.jsp">Crear alumno</a>
-			</li>
+		<li><img id="imgNav" src="resources/iconohome.jpg" alt="Inicio"><a href="index.jsp"> Inicio</a></li>
+		<li><img id="imgNav" src="resources/iconoperro.jpg" alt="Perro"><a href="perro/formulario-perro.jsp"> Crear Perro</a></li>
+		<li><img id="imgNav" src="resources/iconovideo.jpg" alt="Video"><a href="video/index.jsp"> Crear Video</a></li>
+		<li><img id="imgNav" src="resources/iconoalumno.jpg" alt="Alumno"><a href="alumno/formulario-alumno.jsp"> Crear Alumno</a></li>
+		<li><img id="imgNav" src="resources/iconocss.jpg" alt="CSS"><a href=""> Ejemplos CSS</a></li>
 		</ul>
-		
+
 	</nav>
+
 	
 	<h1>Nuevo Video</h1>
 	
@@ -42,7 +31,7 @@
 	</form>
 
 
-<!-- https://youtu.be/WLKBOJ9jyQg  -->
 
-</body>
-</html>
+
+
+<%@include file="../incluides/footer.jsp" %>
