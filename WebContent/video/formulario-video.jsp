@@ -1,5 +1,5 @@
 <%@include file="../incluides/header.jsp" %>
-	<main class="content">
+	<main id="video-menu" class="content">
 		<h1>Nuevo Video</h1>
 	
 			<p class="text-danger">${mensaje}</p>
@@ -14,7 +14,7 @@
 				<label for="reproducciones">Numero de Reproducciones: </label>
 				<input type="number">
 				<br/>
-				<input type="submit" value="CREAR" />
+				<input class="btn" type="submit" value="CREAR" />
 			</form>
 			
 			<div id="return">

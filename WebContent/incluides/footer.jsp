@@ -9,7 +9,7 @@
 %>
 		<footer>
 			<div class="content">
-				<p>&copy Ipartek <%=currentDate %> <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-instagram"></i></p>	
+				<p>&copy <a href="http://www.formacion.ipartek.com/">Ipartek</a> <%=currentDate %> <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-instagram"></i></p>	
 			</div>
 		</footer>
 

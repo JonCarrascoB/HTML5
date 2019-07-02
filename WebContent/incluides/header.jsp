@@ -3,8 +3,8 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 		<title></title>
-		<base href="/Video/">
-		<!-- <base href="${pageContext.request.contextPath}/"> -->
+		<!--  <base href="/Video/"> -->
+		<base href="${pageContext.request.contextPath}/">
 		<!-- librerias de otros -->
 		<link href="https://fonts.googleapis.com/css?family=Barriecito|Roboto&display=swap" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="vendors/fontawesome-free-5.9.0-web/css/all.min.css" />

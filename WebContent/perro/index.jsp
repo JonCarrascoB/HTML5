@@ -1,5 +1,8 @@
+<%@page import="com.formacion.modelo.pojo.Perro" %>
+<%@page import="java.util.ArrayList" %>
+
 <%@include file="../incluides/header.jsp" %>
-	<main class="content">
+	<main id="perro-index" class="content">
 		<div>
 			<h1>Nuestro perro es: </h1>
 			<h2>Nombre: </h2>
@@ -37,7 +40,7 @@
 			</ol>
 		</aside>
 
-<a href="perro/formulario.jsp">Volver</a>
+<a href="perro/formulario-perro.jsp">Volver</a>
 
 </main>
 

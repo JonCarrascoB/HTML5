@@ -1,13 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Saludo</title>
-</head>
-<body>
+<%@page import="java.lang.Integer" %>
 
+<%@include file="../incluides/header.jsp" %>
+<main class="content">
 	<h1>Pagina Saludo</h1>
 
 	<p>${saludo}</p>
@@ -19,14 +13,14 @@
 		String atributoSaludo = (String) request.getAttribute("saludo");
 		out.print("<p>" + atributoSaludo + "</p>");
 		
-		int repetir = Integer.parseInt(request.getAttribute("repetir"));
+		int repetir = (int) Integer.parseInt(request.getAttribute("repetir"));
 		for(int i =0; i < repetir; i++){
 			%>
-			<p><%atributoSaludo %></p>
+			<p><%=atributoSaludo %></p>
 			<%
 		}
 	%>
 
-	<p><%=atributoSaludo%>
-</body>
-</html>
+	
+	</main>
+<%@include file="../incluides/footer.jsp" %>

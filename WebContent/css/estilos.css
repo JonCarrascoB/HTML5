@@ -153,6 +153,11 @@ img{
 	filter: grayscale(100%);
 }
 
+label{
+	display: block;
+	margin: 0.5em 0 0 0
+}
+
 /*
 3. clases comunes (class, id,...)
 ****************************************************
@@ -172,6 +177,54 @@ img{
 	width: 25px;
 	height: 25px;
 	border: 1px solid #000;
+}
+.btn{
+	display: block;
+	margin: 0.1em 0;
+}
+#servlet-menu h1{
+	color:#003580;
+	font-size: 40px;
+}
+
+#servlet-menu h2{
+	color:#4e535a;
+	font-size: 26px;
+}
+
+#servlet-menu span{
+	color:#003580;
+	font-size: 20px;
+}
+
+#css-menu h1{
+	color:#212529;
+	font-size: 40px;
+}
+#css-menu h2{
+	color:#4e535a;
+	font-size: 25px;
+}
+
+#css-menu a{
+	text-decoration: none;
+}
+
+#parrafos-main h1{
+	color:#212529;
+	font-size: 40px;
+}
+
+#parrafos-main h3{
+	color:#4e535a;
+	font-size: 15px;
+}
+
+
+
+#video-menu h1{
+	color:#212529;
+	font-size: 32px;
 }
 
 /*
@@ -258,23 +311,7 @@ footer{
 	bottom:0;
 	width: 100%;
 }
-
-#servlet-menu h1{
-	color:#003580;
-	font-size: 32px;
+footer a{
+	text-decoration: none;
 }
 
-#servlet-menu h2{
-	color:#4e535a;
-	font-size: 26px;
-}
-
-#servlet-menu span{
-	color:#003580;
-	font-size: 20px;
-}
-
-#css-menu h1{
-	color:#212529;
-	font-size: 32px;
-}
