@@ -81,19 +81,35 @@ body {
 }
 
 h1{
+	text-transform: capitalize;
 	font-family: 'Barriecito', cursive;
+	color:#212529;
+	font-size: 40px;
+	margin-bottom:10px;
 }
 
 h2{
-	
+	color:#4e535a;
+	font-size: 30px;
+}
+
+h3{
+	color:#4e535a;
+	font-size: 20px;
+}
+
+h4, h5, h6 {
+	color:#4e535a;
+	font-size: 10px;
 }
 
 p {
+	margin-bottom: 1em;
 	line-height: 1em;
     color: #564f48;
     letter-spacing: 3px; /*espacio entre los caracteres de un texto*/
     text-align: justify;
-    text-indent: 10px; /*sangria*/
+    /*text-indent: 10px; sangria*/
     /* column-count: 3; pone en columnas*/
 }
 
@@ -101,18 +117,25 @@ p span{
 	color:red;
 }
 
+p a {
+	text-decoration:underline;
+}
+
 p::first-letter{
 	
 	/*Para la letra capital*/
 }
 
-a{
+a, a:visited{
 	color: #0358d8;
+	text-decoration: none;
 }
 
 a:hover{
 	color: #d86c5c;
 }
+
+a:active{}
 
 span{
 	color: #0358d8;
@@ -127,18 +150,6 @@ li{
 }
 
 
-.p1{
-	text-align:center;
-}
-#gp span{
-	color:green;
-}
-.p2>span{
-	color:blue;
-}
-#a + #b {
-	color:red;
-}
 pre {
   display: block;
   font-family: monospace;
@@ -163,11 +174,13 @@ label{
 ****************************************************
 */
 
-#imgPrincipal{
-	width: 50px;
-	height: 50px;
-	border: 2px solid #000;
+.active{
+	background: #003580;
+    border-radius: 2px;
+    color: #FFF !important;
+    padding: 3px 8px;
 }
+
 
 #mainNav{
 	background-color: teal;
@@ -182,50 +195,32 @@ label{
 	display: block;
 	margin: 0.1em 0;
 }
-#servlet-menu h1{
-	color:#003580;
-	font-size: 40px;
-}
 
-#servlet-menu h2{
-	color:#4e535a;
-	font-size: 26px;
-}
 
-#servlet-menu span{
-	color:#003580;
-	font-size: 20px;
+/* ejemplos selectores */
+.p1{
+	text-align:center;
 }
-
-#css-menu h1{
-	color:#212529;
-	font-size: 40px;
+#gp span{
+	color:green;
 }
-#css-menu h2{
-	color:#4e535a;
-	font-size: 25px;
+.p2>span{
+	color:blue;
 }
-
-#css-menu a{
-	text-decoration: none;
+#a + #b {
+	color:red;
 }
-
-#parrafos-main h1{
-	color:#212529;
-	font-size: 40px;
-}
-
-#parrafos-main h3{
-	color:#4e535a;
-	font-size: 15px;
+/* Ejemplos con parrafos*/
+#par1 {
+	line-height: 2em;
+    color: #564f48;
+    letter-spacing: 10px; /*espacio entre los caracteres de un texto*/
+    text-align: center;
+    text-indent: 10px; /*sangria*/
+    column-count: 2; /*pone en columnas*/
 }
 
 
-
-#video-menu h1{
-	color:#212529;
-	font-size: 32px;
-}
 
 /*
 4. layouts - secciones de la web (cabecera, menus, pies)
@@ -235,8 +230,9 @@ label{
 header#principal {
 	background-color: #003580;
 	color:#FFF;
-	padding: 10px;
+	padding: 10px 0 0 0;
 	position:fixed;
+	z-index:999;
 	top:0;
 	width:100%;
 	
@@ -250,6 +246,7 @@ header#principal {
 
 main.content{
 	margin-top: 150px;
+	margin-bottom:120px;
 }
 
 
@@ -303,6 +300,15 @@ main.content{
 #opc .active a{
 	
 }
+
+#buttonTop i{
+	color:#003580;
+	font-size: 32px;
+	float: right;
+	padding-bottom: 5px;
+	text-shadow: 3px 4px 3px #ab9797;
+}
+
 footer{
 	background-color: #DDD;
 	padding: 20px;
@@ -315,3 +321,9 @@ footer a{
 	text-decoration: none;
 }
 
+
+
+/*
+5. media query para response Responsive Web Design
+************************************************************************
+*/

@@ -2,7 +2,7 @@
 <%@page import="java.util.ArrayList" %>
 
 <%@include file="../incluides/header.jsp" %>
-	<main id="perro-index" class="content">
+	
 		<div>
 			<h1>Nuestro perro es: </h1>
 			<h2>Nombre: </h2>
@@ -42,6 +42,6 @@
 
 <a href="perro/formulario-perro.jsp">Volver</a>
 
-</main>
+
 
 <%@include file="../incluides/footer.jsp" %>

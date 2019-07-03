@@ -1,7 +1,7 @@
 
 <%@include file="../incluides/header.jsp" %>
 	
-	<main id="servlet-menu" class="content">
+	
 	<h1>Ejercicios Servlet con .jsp</h1>
 		<nav>
 			<ol>
@@ -19,6 +19,6 @@
 				</li>
 			</ol>
 		</nav>
-	</main>
+	
 
 <%@include file="../incluides/footer.jsp" %>

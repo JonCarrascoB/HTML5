@@ -1,5 +1,5 @@
 <%@include file="../incluides/header.jsp" %>
-<main class="content">
+
 <h1>Selectores básicos</h1>
 <hr>
 <h2>Selector universal</h2>
@@ -47,5 +47,5 @@
 	<h2>Selectores de ID</h2>
 	<p id="gp">El selector de <span>ID</span> permite seleccionar un elemento de la página a través del valor de su atributo <span>ID</span>. Este tipo de selectores sólo seleccionan un elemento de la página porque el valor del atributo id no se puede repetir en dos elementos diferentes de una misma página.</p>
 	<h2>Combinación de selectores básicos</h2>
-</main>
+
 <%@include file="../incluides/footer.jsp" %>

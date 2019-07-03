@@ -1,5 +1,4 @@
 <%@include file="../incluides/header.jsp" %>
-	<main class="content">
 	
 		<a href="perro/index.jsp">Ir al listado</a>
 
@@ -30,6 +29,6 @@
 		<div id="return">
 			<a href="servlet+jsp/index.jsp">Regresar</a>
 		</div>
-	</main>
+
 
 <%@include file="../incluides/footer.jsp" %>

@@ -6,7 +6,13 @@
    SimpleDateFormat ft = 
    new SimpleDateFormat ("yyyy");
    String currentDate = ft.format(dNow);
+   
+   String ruta = request.getRequestURI();
+   
 %>
+			<a href="<%=ruta%>#top" id="buttonTop"><i class="fas fa-arrow-circle-up"></i></a>
+			
+		</main>
 		<footer>
 			<div class="content">
 				<p>&copy <a href="http://www.formacion.ipartek.com/">Ipartek</a> <%=currentDate %> <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-instagram"></i></p>	
