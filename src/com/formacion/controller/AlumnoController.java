@@ -14,7 +14,7 @@ import com.formacion.modelo.pojo.Alumno;
 /**
  * Servlet implementation class AlumnoController
  */
-@WebServlet("/alumnos")
+@WebServlet("/alumno/alumnos")
 public class AlumnoController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private ArrayList<Alumno> alumnos = new ArrayList<Alumno>();

@@ -14,13 +14,13 @@ import com.formacion.modelo.pojo.Perro;
 /**
  * Servlet implementation class PerroController
  */
-@WebServlet("/perros")
+@WebServlet("/perro/perros")
 public class PerroController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private ArrayList<Perro> perros = new ArrayList<Perro>();
        
-	private static final String VIEW_FORMULARIO = "/perro/formulario.jsp";
-	private static final String VIEW_RESPUESTA = "/perro/index.jsp";
+	private static final String VIEW_FORMULARIO = "perro/formulario-perro.jsp";
+	private static final String VIEW_RESPUESTA = "perro/index.jsp";
 	static String view = VIEW_RESPUESTA;
 
 	/**
