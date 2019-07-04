@@ -9,8 +9,9 @@
    
    String ruta = request.getRequestURI();
    
+   
 %>
-			<a href="<%=ruta%>#top" id="buttonTop"><i class="fas fa-arrow-circle-up"></i></a>
+		<a href="#top" onclick="goTop(event)" id="buttonTop"><i class="fas fa-arrow-circle-up fa-2x"></i></a>
 			
 		</main>
 		<footer>
@@ -19,5 +20,6 @@
 			</div>
 		</footer>
 
+	<script src="js/main.js"></script>
 	</body>
 </html>

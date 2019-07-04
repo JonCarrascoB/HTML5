@@ -160,8 +160,6 @@ pre {
 img{
 	width:100%;
 	height: auto;
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
 }
 
 label{
@@ -196,6 +194,60 @@ label{
 	margin: 0.1em 0;
 }
 
+#buttonTop {
+	color:#003580;
+	font-size: 32px;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	z-index:99;
+	padding:1px;
+	text-shadow: 3px 4px 3px #ab9797;
+}
+
+@keyframes pulse {
+	0% {transform: scale(1);
+		color: #f98585;
+	}
+	50% {transform: scale(1.25);
+		color: #f94242;
+	}
+	100% {transform: scale(1.5);
+		color: #f59707;
+	}
+}
+.card{
+	position:relative;
+	width: 640px;
+	float:left;
+	overflow: hidden;
+}
+
+.card:hover .card-content{
+	bottom: 0px;
+	transition-duration: 1s;
+	animation-duration: 1s;
+}
+.card .card-content{
+	position: absolute;
+	background-color: #0000007d;
+	color: #FFF;
+	height: 100%;
+	bottom: -435px;
+	padding: 10px;
+}
+.card .card-content h2{
+	font-weight: 600;
+	font-size: 1.6em;
+}
+
+.card .card-content .fa-heart{
+	float:right;
+	color:red;
+}
+.card .card-content .fa-heart:hover{
+	animation: pulse .5s infinite alternate;
+}
 
 /* ejemplos selectores */
 .p1{
@@ -301,13 +353,7 @@ main.content{
 	
 }
 
-#buttonTop i{
-	color:#003580;
-	font-size: 32px;
-	float: right;
-	padding-bottom: 5px;
-	text-shadow: 3px 4px 3px #ab9797;
-}
+
 
 footer{
 	background-color: #DDD;

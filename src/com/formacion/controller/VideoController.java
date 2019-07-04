@@ -12,11 +12,11 @@ import com.formacion.modelo.pojo.Video;
 /**
  * Servlet implementation class VideoController
  */
-@WebServlet("video/crearVideo")
+@WebServlet("/video/crearVideo")
 public class VideoController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	private static final String VIEW_RESPUESTA = "respuesta.jsp";
-	private static final String VIEW_INDEX = "index.jsp";
+	private static final String VIEW_RESPUESTA = "video.jsp";
+	private static final String VIEW_INDEX = "formulario-video.jsp";
 	private static String view = VIEW_RESPUESTA;
 
 	/**
