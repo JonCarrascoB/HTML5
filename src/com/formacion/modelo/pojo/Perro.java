@@ -32,6 +32,13 @@ public class Perro implements Serializable {
 		vacunado = false;
 		}
 	
+	public Perro(String nombre, int edad) throws Exception {
+		this();
+		this.nombre = nombre;
+		// this.edad = edad;
+		this.setEdad(edad);
+	}
+	
 	//getters y setters
 	
 	public String getNombre() {
@@ -51,7 +58,6 @@ public class Perro implements Serializable {
 	}
 	
 	public void setEdad(int edad)  {
-		
 			this.edad = edad;		
 	}
 	public boolean isVacunado(){
@@ -60,12 +66,6 @@ public class Perro implements Serializable {
 	public void setVacunado(boolean vacunado) {
 			this.vacunado = vacunado;		
 	}
-	
-	public final void ladrar() {
-		System.out.println("Guau Guau");
-	}
-	
-
 	
 	
 	@Override

@@ -12,8 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class SaludoController
  */
-@WebServlet("/saludo/saludar")
+@WebServlet("/saludar")
 public class SaludoController extends HttpServlet {
+	
 	private static final long serialVersionUID = 1L;
 
 	/**
@@ -23,7 +24,7 @@ public class SaludoController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String vista = "respuesta.jsp";
+		String vista = "/saludo/respuesta.jsp";
 
 		// mirar el "name" del input
 		String nombre = request.getParameter("nombre");
@@ -34,7 +35,7 @@ public class SaludoController extends HttpServlet {
 		// validar los datos
 		if (nombre == null || nombre.isEmpty()) {
 			request.setAttribute("mensaje", mensaje);
-			vista = "formulario.jsp";
+			vista = "/saludo/formulario.jsp";
 		} else {
 			String htmlText = "";
 			if ("eu".equalsIgnoreCase(idioma)) {

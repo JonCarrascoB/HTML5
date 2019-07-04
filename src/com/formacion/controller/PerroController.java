@@ -16,11 +16,12 @@ import com.formacion.modelo.pojo.Perro;
  */
 @WebServlet("/perro/perros")
 public class PerroController extends HttpServlet {
+	
 	private static final long serialVersionUID = 1L;
 	private ArrayList<Perro> perros = new ArrayList<Perro>();
        
-	private static final String VIEW_FORMULARIO = "formulario-perro.jsp";
-	private static final String VIEW_RESPUESTA = "index.jsp";
+	private static final String VIEW_FORMULARIO = "perro/formulario-perro.jsp";
+	private static final String VIEW_RESPUESTA = "perro/index.jsp";
 	static String view = VIEW_RESPUESTA;
 
 	/**
@@ -63,15 +64,13 @@ public class PerroController extends HttpServlet {
 		perro.setRaza(raza);
 		perro.setEdad(edad);
 		perro.setVacunado( (vacunado != null) ? true : false );
-		request.setAttribute("perro", perro);
 		perros.add(perro);
+		
+		request.setAttribute("perro", perro);
 		request.setAttribute("perros", perros);
 					
-				
-				
 		// request interna o ir a una JSP
 		request.getRequestDispatcher(view).forward(request, response);
-		
 		
 	}
 
