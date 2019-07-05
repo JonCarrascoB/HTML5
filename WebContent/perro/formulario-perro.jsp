@@ -5,7 +5,7 @@
 		<h1 id="mainTitle">Formulario Crear Perro</h1>
 		<p class="text-danger">${mensaje}</p>
 
-		<form action="perros" method="post">
+		<form action="perro/perros" method="post">
 			<label for="nombre">Nombre: </label> 
 			<input type="text" id="nombre" name="nombre" placeholder="e.j. Milu"> 
 			<br /> 

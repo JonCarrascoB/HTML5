@@ -64,6 +64,16 @@ table {
 	border-spacing: 0;
 }
 
+
+/*
+* Clearflix
+************************************************************************
+*/
+
+.clearflix{
+	overflow: auto;
+}
+
 /*
 2. se da estilo a todas las etiquetas y tengan el mismo estilo, la base
 *************************************************************************
@@ -219,34 +229,43 @@ label{
 .card{
 	position:relative;
 	width: 640px;
-	float:left;
 	overflow: hidden;
 }
 
 .card:hover .card-content{
 	bottom: 0px;
-	transition-duration: 1s;
 	animation-duration: 1s;
 }
 .card .card-content{
-	position: absolute;
-	background-color: #0000007d;
-	color: #FFF;
-	height: 100%;
-	bottom: -435px;
-	padding: 10px;
+	 background-color: rgba(0, 0, 0, 0.5);
+ 	 padding: 10px;
+ 	 color: #FFF;
+ 	 position: absolute;
+  	 transition-duration: 1.5s;
+ 	 bottom: -280px;
+	
 }
 .card .card-content h2{
+	color: #FFF;
 	font-weight: 600;
 	font-size: 1.6em;
 }
 
+.card .card-content p{
+	color: #FFF;
+	font-weight: 300;
+	font-size: 1em;
+}
+
 .card .card-content .fa-heart{
 	float:right;
-	color:red;
+	color: #f98585;
+  	margin-right: 10px;
+  	margin-top: 10px;
 }
 .card .card-content .fa-heart:hover{
-	animation: pulse .5s infinite alternate;
+	animation: pulse .85s infinite alternate;
+	color: red;
 }
 
 /* ejemplos selectores */

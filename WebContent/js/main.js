@@ -23,3 +23,12 @@ function goTop(event){
 	document.documentElement.scrollTop = 0;
 	
 }
+
+function sumLike(event){
+	console.debug("pulsando #button-likes");
+	event.preventDefault();
+
+	var likecount = parseInt(document.getElementById("card-likes").value);
+	++likecount;
+	document.getElementById("card-likes").innerHTML = likecount;
+}

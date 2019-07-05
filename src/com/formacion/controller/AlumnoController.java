@@ -19,8 +19,8 @@ public class AlumnoController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     private ArrayList<Alumno> alumnos = new ArrayList<Alumno>();
     
-    private static final String VIEW_FORMULARIO = "formulario-alumno.jsp";
-	private static final String VIEW_LISTADO = "listado-alumnos.jsp";
+    private static final String VIEW_FORMULARIO = "/alumno/formulario-alumno.jsp";
+	private static final String VIEW_LISTADO = "/alumno/listado-alumnos.jsp";
 	static String view = VIEW_LISTADO;
 
 	/**

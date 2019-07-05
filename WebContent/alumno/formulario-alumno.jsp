@@ -5,7 +5,7 @@
 		<h1>Formulario crear alumno</h1>
 		<p class="text-danger">${mensaje}</p>
 
-		<form action="alumnos" method="post">
+		<form action="alumno/alumnos" method="post">
 			<label for="nombre">Nombre: </label> 
 			<input type="text" id="nombre" name="nombre" placeholder="nombre"> 
 			<br />

@@ -4,7 +4,7 @@
 	
 			<p class="text-danger">${mensaje}</p>
 
-			<form action="crearVideo" method="get">
+			<form action="video/crearVideo" method="get">
 				<label for="titulo">Titulo: </label>
 				<input type="text" name="titulo" id="titulo" placeholder="Minimo 2 letras maximo 150" required pattern=".{2,150}">
 				<br/>

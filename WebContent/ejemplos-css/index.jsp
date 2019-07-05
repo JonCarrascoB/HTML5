@@ -25,9 +25,10 @@
 						<li>5.2. <a href="ejemplos-css/pos-normal.jsp?title=Posic...&a=3">Posicionamiento Normal</a></li>
 						<li>5.3. <a href="ejemplos-css/pos-relativo.jsp?title=Posic...&a=3">Posicionamiento Relativo</a></li>
 						<li>5.4. <a href="ejemplos-css/pos-absoluto.jsp?title=Posic...&a=3">Posicionamiento Absoluto</a></li>
-						<li>5.5. <a href="ejemplos-css/pos-sticky.jsp?title=Posic...&a=3">Posicionamiento Sticky</a></li>
-						<li>5.6. <a href="ejemplos-css/visibilidad.jsp?title=Posic...&a=3">Visibilidad</a></li>
-						<li>5.7. <a href="ejemplos-css/page-card.jsp?title=Posic...&a=3">Page con card</a></li>
+						<li>5.5. <a href="ejemplos-css/pos-float.jsp?title=Posic...&a=3">Posicionamiento con Float</a></li>
+						<li>5.6. <a href="ejemplos-css/pos-sticky.jsp?title=Posic...&a=3">Posicionamiento Sticky</a></li>
+						<li>5.7. <a href="ejemplos-css/visibilidad.jsp?title=Posic...&a=3">Visibilidad</a></li>
+						<li>5.8. <a href="ejemplos-css/page-card.jsp?title=Posic...&a=3">Page con card</a></li>
 					</ol>
 				</li>
 			</ol>
