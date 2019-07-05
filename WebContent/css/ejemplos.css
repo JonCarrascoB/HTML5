@@ -1,0 +1,59 @@
+/*
+* CSS para los ejemplos de la carpeta "ejemplos-css"
+*/
+
+body{
+	font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:serif;
+	color: teal;
+}
+
+h1{
+	color: red;
+	font-size: 2em;
+	margin-top: 6px;
+	margin-bottom: 2px;
+	margin-right: 2px;
+	margin-left: 4px;
+}
+
+h2{
+	font-size: 1.8em;
+	
+}
+
+h3{
+	font-size: 1.5em;
+}
+
+h4,h5,h6{
+	font-size: 1.3em;
+}
+
+p span {
+	color: #e4cc0f;
+}
+
+p {
+	text-align: justify;
+	font-family: Arial;
+	font-size: 1em;
+	margin:0.8em 0.5em 0.8em 0.5em;
+	background-color: #ddc7de;
+	opacity: 0.8;
+	border: 1px solid teal;
+	padding: 3px;
+}
+p .destacado{
+	color: red;
+}
+
+@media print{
+	h1 {
+	color: yellow,
+	font-size: 4em
+	}
+}

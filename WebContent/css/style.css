@@ -1,0 +1,81 @@
+<<<<<<< HEAD
+
+#imgPrincipal{
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+}
+
+ol, ul {
+	list-style-type: none;
+}
+
+form{
+	background-color: #97C;;
+	
+}
+#mainNav{
+	background-color: teal;
+}
+
+#imgNav {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #000;
+}
+
+
+
+/*layouts*/
+
+header{
+	background-color:#DDD;
+}
+
+footer{
+	background-color:pink;
+}
+=======
+/*
+Nuestra hoja de estilos principal
+*/
+
+.text-danger {
+	color: red;
+}
+
+#principal{
+	background-color:teal;
+	color: #FFF;
+	margin: 0 0 25px 0;
+	padding: 10px 10px 10px 10px;
+	border: 5px solid #000;
+}
+#principal a{
+	color: #FFF;
+	text-decoration: none;
+}
+#principal a:hover{
+	color: teal;
+	
+	padding: 5px;
+	transition-duration: 2s;
+	background-color: red;
+	
+}
+h1 {
+	color: #0fcccc;
+    text-transform: uppercase;
+    font-size: 1.5em;
+}
+
+ul{
+	list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+}
+
+label {
+	color: #008080;
+>>>>>>> branch 'master' of https://github.com/JonCarrascoB/HTML5.git
+}

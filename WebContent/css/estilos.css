@@ -1,0 +1,406 @@
+/*
+Nuestra hoja de estilos principal
+
+La estructura del CSS basica
+1. Hacer un reset para resetar los estilos del user-agent
+2. se da estilo a todas las etiquetas y tengan el mismo estilo, la base
+3. clases comunes (class, id,...)
+4. layouts - secciones de la web (cabecera, menus, pies)
+5. media query para response Responsive Web Design
+
+*/
+
+
+/*
+ 1. reset - Hacer un reset para resetar los estilos del user-agent
+ ******************************************************************
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*
+* Clearflix
+************************************************************************
+*/
+
+.clearflix{
+	overflow: auto;
+}
+
+/*
+2. se da estilo a todas las etiquetas y tengan el mismo estilo, la base
+*************************************************************************
+*/
+
+body {
+	font-size:16px;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+    font-weight: 800;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+h1{
+	text-transform: capitalize;
+	font-family: 'Barriecito', cursive;
+	color:#212529;
+	font-size: 40px;
+	margin-bottom:10px;
+}
+
+h2{
+	color:#4e535a;
+	font-size: 30px;
+}
+
+h3{
+	color:#4e535a;
+	font-size: 20px;
+}
+
+h4, h5, h6 {
+	color:#4e535a;
+	font-size: 10px;
+}
+
+p {
+	margin-bottom: 1em;
+	line-height: 1em;
+    color: #564f48;
+    letter-spacing: 3px; /*espacio entre los caracteres de un texto*/
+    text-align: justify;
+    /*text-indent: 10px; sangria*/
+    /* column-count: 3; pone en columnas*/
+}
+
+p span{
+	color:red;
+}
+
+p a {
+	text-decoration:underline;
+}
+
+p::first-letter{
+	
+	/*Para la letra capital*/
+}
+
+a, a:visited{
+	color: #0358d8;
+	text-decoration: none;
+}
+
+a:hover{
+	color: #d86c5c;
+}
+
+a:active{}
+
+span{
+	color: #0358d8;
+}
+
+ol, ul{
+	list-style-type: none;
+}
+
+li{
+	
+}
+
+
+pre {
+  display: block;
+  font-family: monospace;
+  white-space: pre;
+  margin: 1em 0;
+}
+
+img{
+	width:100%;
+	height: auto;
+}
+
+label{
+	display: block;
+	margin: 0.5em 0 0 0
+}
+
+/*
+3. clases comunes (class, id,...)
+****************************************************
+*/
+
+.active{
+	background: #003580;
+    border-radius: 2px;
+    color: #FFF !important;
+    padding: 3px 8px;
+}
+
+
+#mainNav{
+	background-color: teal;
+}
+
+#imgNav {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #000;
+}
+.btn{
+	display: block;
+	margin: 0.1em 0;
+}
+
+#buttonTop {
+	color:#003580;
+	font-size: 32px;
+	position: fixed;
+	bottom: 1em;
+	right: 1em;
+	z-index:99;
+	padding:1px;
+	text-shadow: 3px 4px 3px #ab9797;
+}
+
+@keyframes pulse {
+	0% {transform: scale(1);
+		color: #f98585;
+	}
+	50% {transform: scale(1.25);
+		color: #f94242;
+	}
+	100% {transform: scale(1.5);
+		color: #f59707;
+	}
+}
+.card{
+	position:relative;
+	width: 640px;
+	overflow: hidden;
+}
+
+.card:hover .card-content{
+	bottom: 0px;
+	animation-duration: 1s;
+}
+.card .card-content{
+	 background-color: rgba(0, 0, 0, 0.5);
+ 	 padding: 10px;
+ 	 color: #FFF;
+ 	 position: absolute;
+  	 transition-duration: 1.5s;
+ 	 bottom: -280px;
+	
+}
+.card .card-content h2{
+	color: #FFF;
+	font-weight: 600;
+	font-size: 1.6em;
+}
+
+.card .card-content p{
+	color: #FFF;
+	font-weight: 300;
+	font-size: 1em;
+}
+
+.card .card-content .fa-heart{
+	float:right;
+	color: #f98585;
+  	margin-right: 10px;
+  	margin-top: 10px;
+}
+.card .card-content .fa-heart:hover{
+	animation: pulse .85s infinite alternate;
+	color: red;
+}
+
+/* ejemplos selectores */
+.p1{
+	text-align:center;
+}
+#gp span{
+	color:green;
+}
+.p2>span{
+	color:blue;
+}
+#a + #b {
+	color:red;
+}
+/* Ejemplos con parrafos*/
+#par1 {
+	line-height: 2em;
+    color: #564f48;
+    letter-spacing: 10px; /*espacio entre los caracteres de un texto*/
+    text-align: center;
+    text-indent: 10px; /*sangria*/
+    column-count: 2; /*pone en columnas*/
+}
+
+
+
+/*
+4. layouts - secciones de la web (cabecera, menus, pies)
+**********************************************************
+*/
+
+header#principal {
+	background-color: #003580;
+	color:#FFF;
+	padding: 10px 0 0 0;
+	position:fixed;
+	z-index:999;
+	top:0;
+	width:100%;
+	
+}
+
+.content{
+	max-width:1024px;
+	margin:auto; /* centrado en horizontal */
+	
+}
+
+main.content{
+	margin-top: 150px;
+	margin-bottom:120px;
+}
+
+
+#wrapperNav{
+	margin-top:70px;
+	background-color: #f7f7f7;
+	position:fixed;
+	top:0;
+	width:100%;
+	border-bottom: 1px solid #dee0e2;
+}
+
+#wrapperNav .active a{
+	background-color: #003580;
+    border-radius: 2px;
+    color: #fff;
+    padding: 3px 8px;
+}
+
+#mainMenu ul{
+	align-items: center;
+	list-style: none;
+	heigth: 32px;
+	padding: 0px;
+}
+
+#menu{
+	padding: 5px;
+
+}
+
+#menu ul{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
+#inicio {
+	font-size: 32px;
+	font-weight: 700;
+	color:white;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+/*#opc {
+	display:inline;
+	float: left;
+	font-size: 12px;
+	font-weight: 700;
+	margin-right: 28px;
+	text-transform: uppercase;
+}*/
+
+#menu a {
+	
+	text-decoration: none;
+	padding: 8px;
+	color:#003580;
+}
+
+#opc .active a{
+	
+}
+
+
+
+footer{
+	background-color: #DDD;
+	padding: 20px;
+	margin-top: 30px;
+	position: fixed;
+	bottom:0;
+	width: 100%;
+}
+footer a{
+	text-decoration: none;
+}
+
+
+
+/*
+5. media query para response Responsive Web Design
+************************************************************************
+*/
