@@ -344,6 +344,18 @@ main.content{
 	padding: 0px;
 }
 
+#menu{
+	padding: 5px;
+
+}
+
+#menu ul{
+	display: flex;
+	flex-direction:row;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+}
+
 #inicio {
 	font-size: 32px;
 	font-weight: 700;
@@ -352,17 +364,17 @@ main.content{
 	text-decoration: none;
 }
 
-#opc {
+/*#opc {
 	display:inline;
 	float: left;
 	font-size: 12px;
 	font-weight: 700;
 	margin-right: 28px;
 	text-transform: uppercase;
-}
+}*/
 
-#opc a {
-	display:block;
+#menu a {
+	
 	text-decoration: none;
 	padding: 8px;
 	color:#003580;

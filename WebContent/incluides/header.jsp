@@ -31,13 +31,13 @@
 				<h1><a id="inicio" href="index.jsp"><i class="fas fa-university"></i> IparWeb</a></h1>
 			</div>
 			<div id="wrapperNav">
-				<nav class="content">
-					<ul class="d-flex">
-						<li id="opc"><a href="index.jsp?title=Inicio&a=1" class="<%=("1".equals(active))?"active":"" %>">Inicio</a></li>
-						<li id="opc"><a href="ejemplos-html/index.jsp?title=HTML&a=2" class="<%=("2".equals(active))?"active":""%>">HTML</a></li>
-						<li id="opc"><a href="ejemplos-css/index.jsp?title=CSS&a=3" class="<%=("3".equals(active))?"active":""%>">CSS</a></li>
-						<li id="opc"><a href="ejemplos-js/index.jsp?title=JS&a=4"class="<%=("4".equals(active))?"active":""%>">JS</a></li>
-						<li id="opc"><a href="servlet+jsp/index.jsp?title=Servlet+JSP&a=5" class="<%=("5".equals(active))?"active":""%>">Servlet+JSP</a></li>
+				<nav id= menu" class="content">
+					<ul>
+						<li><a href="index.jsp?title=Inicio&a=1" class="<%=("1".equals(active))?"active":"" %>">Inicio</a></li>
+						<li><a href="ejemplos-html/index.jsp?title=HTML&a=2" class="<%=("2".equals(active))?"active":""%>">HTML</a></li>
+						<li><a href="ejemplos-css/index.jsp?title=CSS&a=3" class="<%=("3".equals(active))?"active":""%>">CSS</a></li>
+						<li><a href="ejemplos-js/index.jsp?title=JS&a=4"class="<%=("4".equals(active))?"active":""%>">JS</a></li>
+						<li><a href="servlet+jsp/index.jsp?title=Servlet+JSP&a=5" class="<%=("5".equals(active))?"active":""%>">Servlet+JSP</a></li>
 					</ul>
 				</nav>
 			</div>

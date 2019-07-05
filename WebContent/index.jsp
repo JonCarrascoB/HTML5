@@ -1,5 +1,5 @@
 <%@include file="../incluides/header.jsp" %>
-
+<
 </nav>
 		<h1>Pagina principal</h1>
 		<h2>head2</h2>
