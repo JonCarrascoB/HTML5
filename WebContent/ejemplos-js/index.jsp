@@ -16,7 +16,8 @@
         <li>dog <i class="fas fa-dog fa-3x"></i></li>
         -->
     </ol>
-
+	
+	pruebas();
     <script src="main.js"></script>
 	
 	

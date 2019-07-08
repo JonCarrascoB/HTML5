@@ -6,10 +6,10 @@
 		<p class="text-danger">${mensaje}</p>
 
 		<form action="perro/perros" method="post">
-			<label for="nombre">Nombre: </label> 
+			<label class="obligatorio" for="nombre">Nombre</label> 
 			<input type="text" id="nombre" name="nombre" placeholder="e.j. Milu"> 
 			<br /> 
-			<label for="raza">Raza: </label> 
+			<label class="obligatorio" for="raza">Raza</label> 
 			<select id="raza" name="raza">
 				<option value="Gran Danes" selected>Gran Danes</option>
 				<option value="Golden Terrier">Golden Terrier</option>
@@ -17,13 +17,14 @@
 				<option value="Cruce">Cruce</option>
 			</select> 
 			<br /> 
-			<label for="edad">Nombre: </label> 
+			<label for="edad">Edad</label> 
 			<input type="number" id="edad" name="edad" value="1"> 
 			<br /> 
 			<label for="vacunado">¿Esta vacunado? </label>
 			<input type="checkbox" id="vacunado" name="vacunado">
 			<br /> 
 			<input type="submit" value="Crear">
+			<input class="btn" type="reset" value="Limpiar formulario" />
 		</form>
 	
 		<div id="return">

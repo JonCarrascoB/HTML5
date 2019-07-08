@@ -2,7 +2,8 @@
 Nuestra hoja de estilos principal
 
 La estructura del CSS basica
-1. Hacer un reset para resetar los estilos del user-agent
+0. Hacer un reset para resetar los estilos del user-agent
+1. @Keyframes o animaciones
 2. se da estilo a todas las etiquetas y tengan el mismo estilo, la base
 3. clases comunes (class, id,...)
 4. layouts - secciones de la web (cabecera, menus, pies)
@@ -73,6 +74,12 @@ table {
 .clearflix{
 	overflow: auto;
 }
+
+/*
+*
+***************************************************
+*/
+
 
 /*
 2. se da estilo a todas las etiquetas y tengan el mismo estilo, la base
@@ -160,28 +167,104 @@ li{
 }
 
 
-pre {
-  display: block;
-  font-family: monospace;
-  white-space: pre;
-  margin: 1em 0;
-}
-
 img{
 	width:100%;
 	height: auto;
 }
 
 label{
+	color: #003580;
+	margin-right: 15px;
 	display: block;
-	margin: 0.5em 0 0 0
+}
+label:after{
+	content: ":";
+}
+label.obligatorio:before{
+	content: "(*)";
+}
+
+input[type="checkbox"]{
+	width:25px;
+	height:25px;
+	background-color: #215fb7;
+	cursor: pointer;
+}
+input[type="radio"]{
+	width: 30px;
+	height: 30px;
+	background-color: #215fb7;
+	cursor: pointer;
+}
+
+input[type="text"], input[type="number"], input[type="email"]{
+	border:none;
+	margin:10px;
+	border-bottom: 2px solid #003580;
+	padding: 5px 10px;
+}
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus{
+	font-size: 1.6em;
+	color: #003580;
+}
+input[type="text"]:invalid, input[type="number"]:invalid, input[type="email"]:invalid{
+	color:#c1430a;
+	border-bottom: 2px solid #c1430a;
+}
+input[type="text"]:valid, input[type="number"]:valid, input[type="email"]:valid{
+	color: #003580;
+}
+input[type="submit"],input[type="reset"]{
+	background-color: #003580;
+	color:#FFF;
+	border-radius: 15px;
+	border: none;
+	padding: 5px 15px;
+	margin-top: 20px;
+}
+
+input[type="submit"]:hover{
+	background-color: #d21ca4;
+}
+input[type="reset"]{
+	background-color: #f9ae00;	
+}
+input[type="reset"]:hover{
+	background-color: #c1430a;
 }
 
 /*
 3. clases comunes (class, id,...)
 ****************************************************
 */
-
+#raza{
+	margin:10px;
+	height: 30px;
+	width: 250px;
+	background-color: #1464d6;
+	border-radius: 20px;
+	color:#FFF;
+}
+#ojos{
+	margin:10px;
+	height: 30px;
+	width: 250px;
+	background-color: #65c5e0;
+	border-radius: 20px;
+	color:#FFF;
+}
+#ojos[value="negros"]{
+	color:#000;
+}
+#ojos[value="marrones"]{
+	color:#FFF;
+}
+#ojos[value="verdes"]{
+	color:#FFF;
+}
+#ojos[value="azules"]{
+	color:#FFF;
+}
 .active{
 	background: #003580;
     border-radius: 2px;
@@ -198,10 +281,6 @@ label{
 	width: 25px;
 	height: 25px;
 	border: 1px solid #000;
-}
-.btn{
-	display: block;
-	margin: 0.1em 0;
 }
 
 #buttonTop {

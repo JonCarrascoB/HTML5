@@ -6,10 +6,10 @@
 		<p class="text-danger">${mensaje}</p>
 
 		<form action="alumno/alumnos" method="post">
-			<label for="nombre">Nombre: </label> 
+			<label class="obligatorio" for="nombre">Nombre: </label> 
 			<input type="text" id="nombre" name="nombre" placeholder="nombre"> 
 			<br />
-			<label for="edad">Edad: </label> 
+			<label class="obligatorio" for="edad">Edad: </label> 
 			<input type="number" id="nombre" name="nombre" value="1"> 
 			<br />
 			 <label for="altura">Altura: </label> 
@@ -32,6 +32,7 @@
 			<input type="radio" id="sexo" name="sexo" value="i"> Indefinico
 			<br /> 
 			<input type="submit" value="Crear">
+			<input class="btn" type="reset" value="Limpiar formulario" />
 		</form>
 
 		<div id="return">

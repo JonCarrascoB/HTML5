@@ -19,7 +19,11 @@
 				<p>&copy <a href="http://www.formacion.ipartek.com/">Ipartek</a> <%=currentDate %> <i class="fab fa-facebook-square"></i> <i class="fab fa-twitter-square"></i> <i class="fab fa-instagram"></i></p>	
 			</div>
 		</footer>
-
+	
+		
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 	<script src="js/main.js"></script>
+	
 	</body>
 </html>

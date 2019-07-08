@@ -15,17 +15,49 @@ console.warn("Houston, tenemos un problemilla");
 console.error("Upps la he liado parda");
 */
 
+function init() {
 
-function goTop(event){
+	console.debug("DOM cargado y listo para usar");
+	activateMenu();
+
+	
+}
+
+function activateMenu(){
+	console.trace('activateMenu inicio');
+	
+	var url = window.location.href;
+	var anclasMenu = document.querySelectorAll('#menu a');
+	//console.debug('anclasMenu %o' + anclasMenu);
+
+	if (url.indexOf("/ejemplos-js/") != -1) {
+		console.debug('activar menu js');
+		anclasMenu[3].classList.add('active');
+	} else if (url.indexOf("/ejemplos-html/") != -1) {
+		console.debug('activar menu html');
+		anclasMenu[1].classList.add('active');
+	} else if (url.indexOf("/ejemplos-css/") != -1) {
+		console.debug('activar menu css');
+		anclasMenu[2].classList.add('active');
+	} else if (url.indexOf("/servlet+jsp/") != -1) {
+		console.debug('activar menu html');
+		anclasMenu[4].classList.add('active');
+	} else{
+		anclasMenu[0].classList.add('active');
+	}
+	console.trace('activateMenu fin');
+}
+
+function goTop(event) {
 	console.debug("pulsado #buttonTop");
 	//prevenir que el ancla navegue con otra url
 	event.preventDefault();
 	//cammbiar el scroll
 	document.documentElement.scrollTop = 0;
-	
+
 }
 
-function sumLike(event){
+function sumLike(event) {
 	console.debug("pulsando #button-likes");
 	event.preventDefault();
 	var count = document.getElementById("card-likes");
@@ -34,48 +66,48 @@ function sumLike(event){
 	count.innerHTML = likecount;
 }
 
-
-var h1 = document.getElementById("titulo1");
-console.debug("selecionado h1 por su id, que contiene el texto");
-
-
-h1.style.color = 'red';
-h1.textContent= "nuevo contenido cambiado por JS";
-h1.innerHTML = h1.innerHTML + '<span class="rojo">Toma span</span>';
-
-console.info("sumar "+("1"+1));
+function pruebas() {
+	var h1 = document.getElementById("titulo1");
+	console.debug("selecionado h1 por su id, que contiene el texto");
 
 
-var animalesJson = [{
-    "nombre": "Gato",
-    "clase": "fas fa-cat fa-3x"
-    },
-    {
-    "nombre": "Perro",
-    "clase": "fas fa-dog fa-3x"
-    },
-    {
-    "nombre": "Cuervo",
-    "clase": "fas fa-crow fa-3x"
-    }
-];
+	h1.style.color = 'red';
+	h1.textContent = "nuevo contenido cambiado por JS";
+	h1.innerHTML = h1.innerHTML + '<span class="rojo">Toma span</span>';
 
-var list = document.getElementById("listaAnimales");
-var lis ="";
-list.innerHTML="";
-for(i=0; i<animalesJson.length; i++){
-    lis += `<li>${animalesJson[i].nombre} <i class="${animalesJson[i].clase}"></i></li>`
+	console.info("sumar " + ("1" + 1));
+
+
+	var animalesJson = [{
+		"nombre": "Gato",
+		"clase": "fas fa-cat fa-3x"
+	},
+	{
+		"nombre": "Perro",
+		"clase": "fas fa-dog fa-3x"
+	},
+	{
+		"nombre": "Cuervo",
+		"clase": "fas fa-crow fa-3x"
+	}
+	];
+
+	var list = document.getElementById("listaAnimales");
+	var lis = "";
+	list.innerHTML = "";
+	for (i = 0; i < animalesJson.length; i++) {
+		lis += `<li>${animalesJson[i].nombre} <i class="${animalesJson[i].clase}"></i></li>`
+	}
+
+	list.innerHTML = lis;
+
+
+	var parrafos = document.getElementsByTagName("p");
+	console.debug("parrafos %o", parrafos);
+	for (i = 0; i < parrafos.length; i++) {
+		parrafos[i].style.color = 'green';
+		parrafos[i].style.fontSize = '26px';
+	}
 }
-
-list.innerHTML = lis;
-
-
-var parrafos = document.getElementsByTagName("p");
-console.debug("parrafos %o", parrafos);
-for(i=0; i<parrafos.length; i++){
-    parrafos[i].style.color= 'green';
-    parrafos[i].style.fontSize = '26px';
-}
-
 
 
