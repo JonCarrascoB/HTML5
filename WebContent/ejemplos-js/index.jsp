@@ -1,5 +1,7 @@
 <%@include file="../incluides/header.jsp" %>
 
+	<a href="ejemplos-js/canvas.jsp">Gamedev Canvas</a>
+	
 	<h1 id="titulo1">Introduccion</h1>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptatem similique exercitationem aspernatur atque illum ut aperiam eius consectetur dignissimos consequatur quisquam error quos officia adipisci est, eveniet quis omnis.</p>
     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita voluptatem similique exercitationem aspernatur atque illum ut aperiam eius consectetur dignissimos consequatur quisquam error quos officia adipisci est, eveniet quis omnis.</p>
