@@ -20,7 +20,6 @@ function init() {
 	console.debug("DOM cargado y listo para usar");
 	activateMenu();
 
-	
 }
 
 function activateMenu(){
@@ -108,6 +107,47 @@ function pruebas() {
 		parrafos[i].style.color = 'green';
 		parrafos[i].style.fontSize = '26px';
 	}
+
+	var starwarsJson = [{
+		"name": "Luke Skywalker",
+		"height": "172",
+		"mass": "77",
+		"hair_color": "blond",
+		"skin_color": "fair",
+		"eye_color": "blue",
+		"birth_year": "19BBY",
+		"class":"fab fa-jedi-order fa-2x"
+		},
+		{
+		"name": "C-3PO",
+		"height": "167",
+		"mass": "75",
+		"hair_color": "n/a",
+		"skin_color": "gold",
+		"eye_color": "yellow",
+		"birth_year": "112BBY",
+		"class": "fas fa-robot fa-2x"
+		},
+		{
+		"name": "R2-D2",
+		"height": "96",
+		"mass": "32",
+		"hair_color": "n/a",
+		"skin_color": "white, blue",
+		"eye_color": "red",
+		"birth_year": "33BBY",
+		"class": "fab fa-android fa-2x"
+		}
+	];
+
+	var swlist = document.getElementById("listaStarWars");
+	var swlis = "";
+	swlist.innerHTML = "";
+	for (i = 0; i < starwarsJson.length; i++) {
+		swlis += `<li>${starwarsJson[i].name}, ${starwarsJson[i].birth_year} <i class="${starwarsJson[i].class}"></i></li>`
+	}
+
+	swlist.innerHTML = swlis;
 }
 
 

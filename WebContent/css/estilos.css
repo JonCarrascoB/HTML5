@@ -124,7 +124,7 @@ p {
 	margin-bottom: 1em;
 	line-height: 1em;
     color: #564f48;
-    letter-spacing: 3px; /*espacio entre los caracteres de un texto*/
+    letter-spacing: 1px; /*espacio entre los caracteres de un texto*/
     text-align: justify;
     /*text-indent: 10px; sangria*/
     /* column-count: 3; pone en columnas*/
@@ -146,6 +146,7 @@ p::first-letter{
 a, a:visited{
 	color: #0358d8;
 	text-decoration: none;
+	font-size: 1em;
 }
 
 a:hover{
@@ -163,9 +164,8 @@ ol, ul{
 }
 
 li{
-	
+	font-size: larger;
 }
-
 
 img{
 	width:100%;
@@ -272,7 +272,6 @@ input[type="reset"]:hover{
     padding: 3px 8px;
 }
 
-
 #mainNav{
 	background-color: teal;
 }
@@ -360,6 +359,9 @@ input[type="reset"]:hover{
 #a + #b {
 	color:red;
 }
+.uno .in {
+	color:green;
+}
 /* Ejemplos con parrafos*/
 #par1 {
 	line-height: 2em;
@@ -397,11 +399,15 @@ header#principal {
 main.content{
 	margin-top: 150px;
 	margin-bottom:120px;
+	min-height: 50vh;
 }
 
+main.content a:hover{
+	color: #d86c5c;
+}
 
 #wrapperNav{
-	margin-top:70px;
+	margin-top:66px;
 	background-color: #f7f7f7;
 	position:fixed;
 	top:0;
@@ -443,27 +449,12 @@ main.content{
 	text-decoration: none;
 }
 
-/*#opc {
-	display:inline;
-	float: left;
-	font-size: 12px;
-	font-weight: 700;
-	margin-right: 28px;
-	text-transform: uppercase;
-}*/
 
 #menu a {
-	
 	text-decoration: none;
 	padding: 8px;
 	color:#003580;
 }
-
-#opc .active a{
-	
-}
-
-
 
 footer{
 	background-color: #DDD;
@@ -472,6 +463,7 @@ footer{
 	position: fixed;
 	bottom:0;
 	width: 100%;
+	box-sizing: border-box; /* cuenta el border y el padding dentro del width*/
 }
 footer a{
 	text-decoration: none;
@@ -483,3 +475,85 @@ footer a{
 5. media query para response Responsive Web Design
 ************************************************************************
 */
+
+/* madia para el movil de 425px, L-Mobile*/
+@media (max-width: 425px) {
+	
+	footer{
+		position: relative;
+	}
+	#buttonTop{
+		bottom: 0.5em;
+		right: 0.5em;
+		font-size: 20px;
+	}
+	#menu ul{
+		justify-content: space-around;
+	}
+	#principal h1{
+		font-size: 1em;
+	}
+	.content{
+		padding:0.5em;
+	}
+	main.content{
+		padding:0.4em;
+		margin-top: 100px;
+    	margin-bottom: 80px;
+	}
+	main.content a:hover{
+		color: #d86c5c;
+	}
+	main.content h1{
+		font-size: 1.5em;
+	}
+	main.content h2{
+		font-size: 1.3em;
+	}
+	main.content a, li, ol, ul{
+		font-size: 1em;
+	}
+	iframe{
+		width: 410px;
+    	height: 315px;
+	}
+	.hljs {
+		padding:0.1em;
+	}
+	.card {
+		width: 415px;
+	}
+	.card .card-content{
+		bottom: -436px;
+	}
+}
+
+@media (orientation: landscape){
+
+	footer{
+		position: relative;
+	}
+	#buttonTop{
+		bottom: 0.5em;
+		right: 0.5em;
+		font-size: 20px;
+	}
+	#principal h1{
+		font-size: 1em;
+	}
+	#menu ul{
+		justify-content: space-around;
+	}
+	main.content{
+		padding:0.4em;
+	}
+	main.content h1{
+		font-size: 1.5em;
+	}
+	main.content h2{
+		font-size: 1.3em;
+	}
+	main.content a, li, ol, ul{
+		font-size: 1em;
+	}
+}

@@ -27,6 +27,8 @@
 				}
 		</code></pre>
 		<hr>
-		
+		<div id="return">
+				<a href="ejemplos-css/index.jsp">Regresar</a>
+		</div>
 	
 <%@include file="../incluides/footer.jsp" %>

@@ -59,6 +59,29 @@
 				top: 59px;
 				left: 114px;
 			}
+			@media (max-width: 425px) {
+				.box{
+					width: 30%;
+				}
+				.z0{
+					position:absolute;
+					z-index: 5;
+					top: 50px;
+					left: 260px;;
+				}
+				.z50{
+					position:absolute;
+					z-index: 15;
+					top: 10px;
+					left: 150px;
+				}
+				.z100{
+					position:absolute;
+					z-index: 25;
+					top: 40px;
+					left: 40px;
+				}
+			}
 		
 		</style>
 		<br>
@@ -101,7 +124,9 @@
 			<div class="box z50">Caja 2 - Caja 2 - Caja 2 - Caja 2 - Caja 2 </div>
 			<div class="box z100">Caja 3 - Caja 3 - Caja 3 - Caja 3 - Caja 3 </div>
 		</div>
-		
-		
+		<hr>
+		<div id="return">
+			<a href="ejemplos-css/index.jsp">Regresar</a>
+		</div>
 		
 <%@include file="../incluides/footer.jsp" %>

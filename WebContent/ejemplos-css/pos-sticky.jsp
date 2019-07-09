@@ -1,7 +1,7 @@
 <%@include file="../incluides/header.jsp" %>
 
 	<h1>posicionamiento sticky</h1>
-		<p>Lorem ipsum...</p>
+	<p>Lorem ipsum...</p>
 		
 		<style>
 			.contenedor{
@@ -37,7 +37,9 @@
 			<div class="box caja1">Caja 1</div>
 			<div class="box caja2 sticky">Caja 2</div>
 		</div>
-
+		<div id="return">
+			<a href="ejemplos-css/index.jsp">Regresar</a>
+		</div>
 
 
 <%@include file="../incluides/footer.jsp" %>

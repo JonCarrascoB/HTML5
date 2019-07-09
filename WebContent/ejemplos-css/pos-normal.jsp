@@ -31,5 +31,8 @@
 			<div class="box w100">Caja 4</div>
 		</div>
 		
+		<div id="return">
+			<a href="ejemplos-css/index.jsp">Regresar</a>
+		</div>
 		
 <%@include file="../incluides/footer.jsp" %>

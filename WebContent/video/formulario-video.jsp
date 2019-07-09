@@ -1,5 +1,5 @@
 <%@include file="../incluides/header.jsp" %>
-	<main id="video-menu" class="content">
+	
 		<h1>Nuevo Video</h1>
 	
 			<p class="text-danger">${mensaje}</p>
@@ -21,7 +21,7 @@
 			<div id="return">
 				<a href="servlet+jsp/index.jsp">Regresar</a>
 			</div>
-	</main>
+
 
 <!-- https://youtu.be/WLKBOJ9jyQg  -->
 

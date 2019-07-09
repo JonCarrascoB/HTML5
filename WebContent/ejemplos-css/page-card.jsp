@@ -14,6 +14,10 @@
 		</div>
 		
 	</div><!-- /card -->
+	<hr>
+	<div id="return">
+			<a href="ejemplos-css/index.jsp">Regresar</a>
+	</div>
 	
 	<script src="js/main.js"></script>
 
