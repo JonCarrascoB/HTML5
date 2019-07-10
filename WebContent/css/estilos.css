@@ -484,7 +484,7 @@ footer a{
 */
 
 /* madia para el movil de 425px, L-Mobile*/
-@media (max-width: 425px) {
+@media (max-width: 425px), (orientation: landscape) and (max-width: 1024px) {
 	
 	footer{
 		position: relative;
@@ -535,32 +535,3 @@ footer a{
 	}
 }
 
-@media (orientation: landscape){
-
-	footer{
-		position: relative;
-	}
-	#buttonTop{
-		bottom: 0.5em;
-		right: 0.5em;
-		font-size: 20px;
-	}
-	#principal h1{
-		font-size: 1em;
-	}
-	#menu ul{
-		justify-content: space-around;
-	}
-	main.content{
-		padding:0.4em;
-	}
-	main.content h1{
-		font-size: 1.5em;
-	}
-	main.content h2{
-		font-size: 1.3em;
-	}
-	main.content a, li, ol, ul{
-		font-size: 1em;
-	}
-}

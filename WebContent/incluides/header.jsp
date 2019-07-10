@@ -62,6 +62,7 @@
 						<li><a href="ejemplos-css/index.jsp?title=CSS&a=3">CSS</a></li>
 						<li><a href="ejemplos-js/index.jsp?title=JS&a=4">JS</a></li>
 						<li><a href="servlet+jsp/index.jsp?title=Servlet+JSP&a=5">Servlet+JSP</a></li>
+						<li><a href="ejemplos-bootstrap/index.jsp?title=Bootstrap4&a=6">Bootstrap4</a></li>
 					</ul>
 				</nav>
 			</div>
