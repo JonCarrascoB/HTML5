@@ -2,7 +2,7 @@ package com.formacion.controller;
 
 import java.io.IOException;
 import java.util.ArrayList;
-import java.lang.*;
+
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -49,8 +49,8 @@ public class AlumnoController extends HttpServlet {
 		Alumno alumno = new Alumno();
 		alumno.setNombre(nombre);
 		alumno.setEdad(Integer.parseInt(edad));
-		alumno.setAltura(Float.parseFloat(altura));
-		alumno.setPeso(Float.parseFloat(peso));
+		alumno.setAltura(Float.valueOf(altura));
+		alumno.setPeso(Float.valueOf(peso));
 		alumno.setOjos(ojos);
 		alumno.setSexo(sexo.charAt(0));
 		

@@ -24,7 +24,7 @@ public class SaludoController extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
-		String vista = "/saludo/respuesta.jsp";
+		String vista = "/helloweb/saludo/respuesta.jsp";
 
 		// mirar el "name" del input
 		String nombre = request.getParameter("nombre");

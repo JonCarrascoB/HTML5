@@ -13,10 +13,10 @@
 			<input type="number" id="nombre" name="nombre" value="1"> 
 			<br />
 			 <label for="altura">Altura: </label> 
-			<input type="number" id="altura" name="altura" value="1"> 
+			<input type="number" id="altura" name="altura" value="1" step="0.01"> 
 			<br />
 			<label for="edad">Peso: </label> 
-			<input type="number" id="edad" name="edad" value="1"> 
+			<input type="number" id="edad" name="edad" value="1" step="0.5"> 
 			<br />
 			<label for="ojos">¿De que color tiene los ojos? </label>
 			<select id="ojos" name="ojos">
