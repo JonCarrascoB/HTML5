@@ -27,6 +27,7 @@
       				<a class="nav-item nav-link" href="ejemplos-bootstrap/grid.jsp">Grid</a>
       				<a class="nav-item nav-link" href="ejemplos-bootstrap/ejemplo.jsp">Pagina completa</a>
       				<a class="nav-item nav-link" href="ejemplos-bootstrap/theme.jsp">Plantillazo o Theme</a>
+      				<a class="nav-item nav-link" href="ejemplos-bootstrap/maquetacion.jsp">Maquetacion</a>
     			</div>
   			</div>
   		</div>

@@ -9,6 +9,7 @@
 			<li><a href="ejemplos-bootstrap/grid.jsp">Grid system 12 columnas</a></li>
 			<li><a href="ejemplos-bootstrap/ejemplo.jsp">Pagina completa</a></li>
 			<li><a href="ejemplos-bootstrap/theme.jsp">Plantillazo o Theme</a></li>
+			<li><a href="ejemplos-bootstrap/maquetacion.jsp">Maquetacion</a></li>
 		
 		</ol>
 	</nav>

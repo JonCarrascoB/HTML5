@@ -51,9 +51,4 @@ p .destacado{
 	color: red;
 }
 
-@media print{
-	h1 {
-	color: yellow,
-	font-size: 4em
-	}
-}
+
