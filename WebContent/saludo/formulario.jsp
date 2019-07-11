@@ -1,6 +1,6 @@
 <%@include file="../incluides/header.jsp" %>
 
-	<form action="saludo/saludar" method="get">
+	<form action="saludar" method="get">
 		<p style="color: red">${mensaje}</p>
 		<input type="text" name="nombre" autofocus tabindex="1" placeholder="Dime tu nombre" /> <br>
 		<select name="idioma"  tabindex="3">

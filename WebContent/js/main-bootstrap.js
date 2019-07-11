@@ -32,3 +32,11 @@ function activateMenu(){
 	}*/
 	console.trace('activateMenu fin');
 }
+
+$(function () {
+  $('[data-toggle="popover"]').popover()
+})
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

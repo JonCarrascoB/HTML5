@@ -41,8 +41,8 @@ function activateMenu(){
 	} else if (url.indexOf("/servlet+jsp/") != -1) {
 		console.debug('activar menu html');
 		anclasMenu[4].classList.add('active');
-	}  else if (url.indexOf("/servlet+jsp/") != -1) {
-		console.debug('activar menu html');
+	}  else if (url.indexOf("/ejemplos-bootstrap/") != -1) {
+		console.debug('activar menu bootstrap');
 		anclasMenu[5].classList.add('active');
 	} else{
 		anclasMenu[0].classList.add('active');

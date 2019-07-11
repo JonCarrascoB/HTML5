@@ -8,6 +8,8 @@
 	
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="vendors/fontawesome-free-5.9.0-web/css/all.min.css" />
+	
 	<!-- CSS propio -->
 	<link rel="stylesheet" type="text/css" href="css/custom-bootstrap.css" media="screen"/>
     <title>Bootstrap4</title>
