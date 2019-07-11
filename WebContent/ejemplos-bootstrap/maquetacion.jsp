@@ -14,19 +14,19 @@
   </head>
   <body>
   	<main class="container">
-  		<div class="row">
+  		<header class="row">
   			<div class="col-1"></div>
   			<div class="col-9">
   				<img alt="orbela" src="images/logo_encabezado.png">
   			</div>
   			<div class="col-2">
-  				<ul>
-  					<li class="lang-es active"><span>ES</span></li>
-  					<li class="lang-eu"><span>EU</span></li>
+  				<ul class="list-group list-group-horizontal">
+  					<li class="list-group-item lang-es active"><span>ES</span></li>
+  					<li class="list-group-item lang-eu"><span>EU</span></li>
   				</ul>
   			</div>
   			<div class="col-1"></div>
-  		</div>
+  		</header>
   			
   		<nav class="navbar navbar-expand-lg navbar-light bg-light">
   			<div class="collapse navbar-collapse" id="navbarNav">

@@ -7,16 +7,16 @@
 
 		<form action="alumno/alumnos" method="post">
 			<label class="obligatorio" for="nombre">Nombre: </label> 
-			<input type="text" id="nombre" name="nombre" placeholder="nombre"> 
+			<input type="text" id="nombre" name="nombre" placeholder="e.g. Manolo"> 
 			<br />
 			<label class="obligatorio" for="edad">Edad: </label> 
-			<input type="number" id="nombre" name="nombre" value="1"> 
+			<input type="number" id="edad" name="edad" value="1"> 
 			<br />
 			 <label for="altura">Altura: </label> 
-			<input type="number" id="altura" name="altura" value="1" step="0.01"> 
+			<input type="number" id="altura" name="altura" value="1.00" step="0.01"> 
 			<br />
-			<label for="edad">Peso: </label> 
-			<input type="number" id="edad" name="edad" value="1" step="0.5"> 
+			<label for="peso">Peso: </label> 
+			<input type="number" id="peso" name="peso" value="1.00" step="0.5"> 
 			<br />
 			<label for="ojos">¿De que color tiene los ojos? </label>
 			<select id="ojos" name="ojos">

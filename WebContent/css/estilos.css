@@ -13,7 +13,7 @@ La estructura del CSS basica
 
 
 /*
- 1. reset - Hacer un reset para resetar los estilos del user-agent
+ 0. reset - Hacer un reset para resetar los estilos del user-agent
  ******************************************************************
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -83,7 +83,7 @@ canvas{
 }
 
 /*
-*
+* 1. @Keyframes o animaciones
 ***************************************************
 */
 
@@ -238,6 +238,19 @@ input[type="reset"]{
 }
 input[type="reset"]:hover{
 	background-color: #c1430a;
+}
+table{
+	width: 100%
+}
+
+table, th, td {
+	border: 1px solid #003580;
+	
+}
+
+th, td {
+  text-align: center;
+  padding: 10px;
 }
 
 /*

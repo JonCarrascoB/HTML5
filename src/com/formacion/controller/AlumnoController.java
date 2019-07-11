@@ -49,8 +49,10 @@ public class AlumnoController extends HttpServlet {
 		Alumno alumno = new Alumno();
 		alumno.setNombre(nombre);
 		alumno.setEdad(Integer.parseInt(edad));
-		alumno.setAltura(Float.valueOf(altura));
-		alumno.setPeso(Float.valueOf(peso));
+		alumno.setAltura(Float.parseFloat(altura));
+	
+		alumno.setPeso(Float.parseFloat(peso));
+	    
 		alumno.setOjos(ojos);
 		alumno.setSexo(sexo.charAt(0));
 		
